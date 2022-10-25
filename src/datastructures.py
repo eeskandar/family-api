@@ -21,7 +21,9 @@ class FamilyStructure:
 
     def add_member(self, member):
         # fill this method and update the return
-        pass
+        id = self._generateId()
+        member["id"] = id
+        self._members.append(member)
 
     def delete_member(self, id):
         # fill this method and update the return
